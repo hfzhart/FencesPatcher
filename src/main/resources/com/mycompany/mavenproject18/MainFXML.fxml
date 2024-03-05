@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject18.PrimaryController">
+   <children>
+      <Button fx:id="deleteButton" layoutX="110.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" prefHeight="38.0" prefWidth="120.0" text="Patch" />
+      <Button fx:id="tempButton" layoutX="110.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleTempButtonAction" prefHeight="38.0" prefWidth="120.0" text="Temp-Mail" />
+      <TextField fx:id="pathTextField" disable="true" editable="false" layoutX="50.0" layoutY="143.0" prefHeight="25.0" prefWidth="240.0" />
+      <Text disable="true" layoutX="95.0" layoutY="64.0" stroke="#f80000" strokeType="OUTSIDE" strokeWidth="0.0" text="Fences Patcher">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="pathDef" fontSmoothingType="LCD" layoutX="50.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Default path" textAlignment="CENTER" wrappingWidth="240.0">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="pathLink" layoutX="122.0" layoutY="176.0" onAction="#choosePath" prefHeight="25.0" prefWidth="120.0" text="Change path" textAlignment="CENTER">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Hyperlink>
+      <ChoiceBox fx:id="localeChoice" layoutX="242.0" layoutY="376.0" prefHeight="25.0" prefWidth="87.0" />
+   </children>
+</AnchorPane>
